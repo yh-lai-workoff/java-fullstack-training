@@ -17,7 +17,7 @@ public class RegisterCustomer extends HttpServlet {
 		String name = req.getParameter("personname");
 		String email = req.getParameter("email");
 		
-		System.out.println("DEBUG: Servlet RegisterCustomer reqceived REQUEST.");
+		System.out.println("DEBUG: Servlet RegisterCustomer received REQUEST.");
 
 	}
 	
