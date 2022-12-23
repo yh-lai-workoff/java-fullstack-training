@@ -47,11 +47,16 @@ public class FilterRegister implements Filter {
 		if (username.length() == 0 || password.length() == 0 || name.length() == 0 || email.length() == 0
 				|| !password.equals(cpassword)) {
 			System.out.println("DEBUG: Filter Rejected Length Or Confirm Password");
-		} else if (DataValidation.validatePassword(password)) {
+		} else if (!DataValidation.validatePassword(password)) {
 			System.out.println("DEBUG: Filter Rejected Password Format");
+		} else if (username.length() < 8 || username.length() > 12) {
+			System.out.println("DEBUG: Filter Rejected Username Format");
 		}
-		// pass the request along the filter chain
-		chain.doFilter(request, response);
+		else {
+			// pass the request along the filter chain
+			chain.doFilter(request, response);
+		}
+		
 	}
 
 	/**
