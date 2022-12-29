@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd"
+    xmlns:util="http://www.springframework.org/schema/util/spring-utils.xsd">
+
+	<bean id="airtel" 
+		class="com.accenture.spring.demo.Airtel">
+		
+		<property name="test" value ="test success"/>
+		<property name="test2" value="23"/>
+		<!--  Not LEGAL! -->
+		<!--<property name="noSetTest" value = "Test success 2"/>-->
+		
+	</bean>
+	<bean id="vphone" 
+		class="com.accenture.spring.demo.Vodaphone" 
+		scope="prototype">
+		
+		<constructor-arg name="name" value="wonderful" />
+		<constructor-arg name="value" value="333" />
+	</bean>
+	
+	
+	
+</beans>
+
+	
+	
