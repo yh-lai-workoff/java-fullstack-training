@@ -1,11 +1,14 @@
 package com.accenture.spring.demo;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Airtel {
 	
 	private String test;
 	private int test2;
 	public String noSetTest;
+	PassingObject pObj;
 	
 	Airtel(){
 		System.out.println("This class will only create once");
@@ -29,6 +32,14 @@ public class Airtel {
 
 	public void setTest2(int test2) {
 		this.test2 = test2;
+	}
+
+	public PassingObject getpObj() {
+		return pObj;
+	}
+
+	public void setpObj(PassingObject pObj) {
+		this.pObj = pObj;
 	}
 	
 	

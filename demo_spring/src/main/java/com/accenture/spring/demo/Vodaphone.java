@@ -1,5 +1,8 @@
 package com.accenture.spring.demo;
 
+import org.springframework.stereotype.Component;
+
+@Component("vphone")
 public class Vodaphone {
 	private String name;
 	private int value;

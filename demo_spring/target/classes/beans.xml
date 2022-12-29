@@ -5,6 +5,8 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd"
     xmlns:util="http://www.springframework.org/schema/util/spring-utils.xsd">
+    
+    
 
 	<bean id="airtel" 
 		class="com.accenture.spring.demo.Airtel">
@@ -13,8 +15,16 @@
 		<property name="test2" value="23"/>
 		<!--  Not LEGAL! -->
 		<!--<property name="noSetTest" value = "Test success 2"/>-->
+		<property name="pObj" ref="passedObject"/>
 		
 	</bean>
+	
+	<bean id="passedObject"
+		class="com.accenture.spring.demo.PassingObject">
+		<constructor-arg name="valuables" value="tested"/>
+		
+	</bean>
+	
 	<bean id="vphone" 
 		class="com.accenture.spring.demo.Vodaphone" 
 		scope="prototype">
@@ -22,9 +32,7 @@
 		<constructor-arg name="name" value="wonderful" />
 		<constructor-arg name="value" value="333" />
 	</bean>
-	
-	
-	
+		
 </beans>
 
 	
