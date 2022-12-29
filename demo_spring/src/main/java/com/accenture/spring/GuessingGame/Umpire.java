@@ -1,4 +1,4 @@
-package GuessingGame;
+package com.accenture.spring.GuessingGame;
 
 public class Umpire {
 	int guesserNum;

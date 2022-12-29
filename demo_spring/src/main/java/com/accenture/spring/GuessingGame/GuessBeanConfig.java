@@ -1,4 +1,4 @@
-package GuessingGame;
+package com.accenture.spring.GuessingGame;
 
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;
