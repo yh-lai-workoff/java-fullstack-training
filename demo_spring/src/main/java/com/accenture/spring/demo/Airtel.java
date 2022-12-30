@@ -11,7 +11,7 @@ public class Airtel {
 	PassingObject pObj;
 	
 	Airtel(){
-		System.out.println("This class will only create once");
+		System.out.println("This Airtel class will only create once. Even if it is getting called by IoC in context.");
 	}
 	
 	public void print() {

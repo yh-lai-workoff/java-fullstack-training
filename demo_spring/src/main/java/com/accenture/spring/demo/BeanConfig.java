@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-//@ComponentScan(basePackages = "com.accenture.spring.demo")
+//@ComponentScan(basePackages = "com.accenture.spring.demo","com.accenture.spring.example")
 public class BeanConfig {
 	
 	@Bean("airtel")
