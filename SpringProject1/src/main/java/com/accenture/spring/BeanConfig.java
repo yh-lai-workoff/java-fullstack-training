@@ -38,6 +38,16 @@ public class BeanConfig {
 		return new JdbcTemplate(dataSource);
 	}
 	
+	@Bean("sample")
+	public Student getStudentBean() {
+		return new Student();
+	}
+	
+	@Bean("mapper")
+	public StudentMapper getMapperBean() {
+		return new StudentMapper();
+	}
+	
 	// Nice Long Detailed Method of getting Properties and setting Template
 //	@Bean("connection")
 //	public JdbcTemplate getTemplateObject() throws IOException {
