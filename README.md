@@ -2,5 +2,7 @@
 Java Fullstack Training 2022-2023 Examples and Experiments
 
 List of Projects:
-1. Car-Servicing_Webapp : Web Application project involving sending and retrieving data in MVC model with SQL Server (WIP)
-1. (TBD) Calculator_Sim : Simple Java CLI project simulating a digital calculator using Inheritance Classes (WIP)
+1. [Avensys Training](https://github.com/yh-lai-workoff/java-fullstack-training/tree/main/AvensysTraining) : Various Tutorial Codes and Assesments are contained in this project.
+2. [SpringProject1](https://github.com/yh-lai-workoff/java-fullstack-training/tree/main/SpringProject1) : Simple Project relying on Spring framework to inject various dependencies for Database Management
+3. Car-Servicing_Webapp : Web Application project involving sending and retrieving data in MVC model with SQL Server (WIP)
+4. (TBD) Calculator_Sim : Simple Java CLI project simulating a digital calculator using Inheritance Classes (WIP)
