@@ -12,6 +12,9 @@ public class Launch {
 		StudentEntity se = new StudentEntity("YanHong","Lie","random@gmail.com");
 //		m.addStudent(se);
 		// Upper and Lowercase gotta be careful
-		m.fetch("YanHong");
+		m.fetchByFirstName("YanHong");
+		m.fetchById(2);
+//		m.updateEmail("blahhhh@gmail.com", 1);
+		m.deleteStudent(3);
 	}
 }
